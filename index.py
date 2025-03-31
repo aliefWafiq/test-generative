@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route("/", methods=["POST"])
 def receive():
-    genai.configure(api_key="AIzaSyBib0RPcR6NQpCPuiacab3WcZrUn2IV75E")
+    genai.configure(api_key="")
 
     model = genai.GenerativeModel("gemini-2.0-flash",
                             system_instruction="""nama kamu adalah zero kamu seorang virtual assistance
